@@ -8,7 +8,6 @@ const port = process.env.port || 5000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 app.use(require('./routes/index'))
 
 app.listen(port,() => {
